@@ -1258,6 +1258,21 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        ports:
+                          items:
+                            properties:
+                              name:
+                                type: string
+                              protocol:
+                                type: string
+                              containerPort:
+                                type: integer
+                            required:
+                            - name
+                            - protocol
+                            - containerPort
+                            type: object
+                          type: array    
                         schedulerName:
                           type: string
                         secrets:
@@ -2985,6 +3000,21 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        ports:
+                          items:
+                            properties:
+                              name:
+                                type: string
+                              protocol:
+                                type: string
+                              containerPort:
+                                type: integer
+                            required:
+                            - name
+                            - protocol
+                            - containerPort
+                            type: object
+                          type: array    
                         schedulerName:
                           type: string
                         secrets:
